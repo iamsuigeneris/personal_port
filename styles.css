@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+h1.title{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #444444;
+	font-family: 'Allura', cursive;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+
+p{
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #a9a9a9;
+}
+.btn a {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid #fb2274;
+    color: #fb2274;
+    display: block;
+    margin: 25px auto 0;
+    text-align: center;
+}
+ .main_page{
+	position: relative;
+} 
+/* Navigation Bar */
+
+.navbar{
+	width: 100%;
+	height: 75px;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.navbar .navbar_items ul{
+	display: flex;
+	font-family: 'Allura', cursive;
+}
+
+.navbar .navbar_items ul li{
+	text-transform: uppercase;
+	color: #111;
+	margin: 0 10px;
+	font-size: 1.5em;
+	
+	
+}
+.navbar_items ul li a{
+	color: #111;
+	
+}
+.navbar_items ul li a:hover{
+	cursor: pointer;
+	background: #444444;
+	color: #ccc;
+}
+.about {
+	width: 100%;
+	height: auto;
+	margin-top: 40px;
+}
+
+.about p{
+	padding: 30px;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 2;
+}
+.name_content{
+	text-align: center; 
+	color: #fb2274; 
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:#f5f5f5;
+	
+}
+.name_content h1{
+	text-transform: uppercase;
+	line-height: 38px;
+	margin-bottom: 15px;
+	font-size: 3.5em;
+	font-family: 'Josefin Sans', sans-serif;
+	
+}
+.name_content h1 span{
+	color: #fb2274;
+	line-height: 38px;
+	font-size: .5em;
+	font-family: 'Allura', cursive;
+}
+.my_pix {
+	text-align: center;
+	margin: 30px;	
+}
+.my_pix img {
+	border-radius: 100px;
+}
+
+/* About */
+.name_title,
+.about,
+.skills,
+.contactme,
+{
+	text-align: center;
+	padding: 5% 10%;
+}
+
+/* Skills */
+
+.skills{
+	background: #f5f5f5;
+	margin-bottom: 50px;
+		
+}
+.skills p{
+	text-align: center;
+	font-size: 1.5em
+}
+
+.diff_skills {
+    margin: 35px;
+    display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.diff_skills .diff_skills_item {
+    width: 30%;
+}
+
+.diff_skills .diff_skills_item img {
+    width: 80%;
+    margin: 25px;
+}
+
+.diff_skills .diff_skills_item h3 {
+    color: #fb2274;
+    margin-bottom: 15px;
+}
+
+/* Contact me */
+.form_wrapper {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.form_wrapper .form_input{
+	margin-bottom: 15px;
+}
+
+.form_wrapper .form_input input[type="text"]{
+	width: 250px;
+	padding: 12px 20px; 
+	border: 1px solid #ccc;
+}
+
+.form_wrapper .form_input textarea{
+	width: 250px;
+	padding: 12px 20px; 
+	height: 80px;
+	resize: none;
+	border: 1px solid  #ccc;
+}
+
+.footer{
+	width: 100%;
+	text-align: center;
+	background: #444444;
+	margin-top: 40px;
+	padding: 20px 0;
+}
+
+.footer a{
+	color: #fff;
+}
+
+@media (max-width: 720px){
+
+	.navbar{
+		margin-top: 20px;
+		height: auto;
+		flex-direction: column;
+	}
+
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.navbar_items ul li{
+		margin-bottom:5px;
+	}
+
+	.title_content{
+		margin-top: 35px;
+	}
+	.skills p{
+		margin: 20px;
+		overflow: hidden;
+	}
+
+}
